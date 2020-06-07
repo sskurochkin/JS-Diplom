@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Catalog</title>
+</head>
+
+<body>
+        <header class="header">
+        <div class="account-menu">
+            <div class="container">
+                <ul class="account-menu-list">
+                    <li class="account-menu-item">
+                        <span id="sing">Регистрация </span>/<span id="login"> Вход</span>
+                    </li>
+
+                    <li class="account-menu-item" id="account"><a href="">Личный кабинет</a></li>
+                    <li class="account-menu-item" id="order"><a href="./cart.html"><span id="cart_counter">0</span></a>
+                    </li>
+                    <li class="account-menu-item">
+                        <label for="language">Язык</label>
+                        <select name="language" id="language">
+                            <option value="RU">RU</option>
+                            <option value="EN" selected>EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <form action="" method="POST">
+                <div class="search-form">
+                    <input type="text" class="search-field">
+                    <input type="submit" name="text" id="search" value=" ">
+                </div>
+            </form>
+
+
+        </div>
+        </div>
+        <nav class="header-menu">
+            <div class="container">
+                <div class="header-menu-list">
+                    <div class="logo"><a href="./index.html"></a></div>
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="./catalog.html">Каталог</a></li>
+                        <li class="menu-item"><a href="./company.html">О Магазине</a></li>
+                        <li class="menu-item"><a href="">Вопросы и ответы</a>
+                            <ul class="faq-submenu">
+                                <li class="menu-item"><a href="">first</a>
+                                <li class="menu-item"><a href="">second</a>
+                                <li class="menu-item"><a href="">third</a>
+                                <li class="menu-item"><a href="">fourth</a>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
+    </header>
+<main>
+
+    <section class="products">
+        <div class="container">
+            <div class="headtitle">Каталог товаров</div>
+            <div class="filter-box">
+                <button id="to_up" class="btn-add">По возрастанию цены</button>
+                <button id="to_down" class="btn-add">По убыванию цены</button>
+                <label for="filter_work">Для работы</label>
+                <input type="checkbox" name="work" id="filter_work" onchange="sortGoods()">
+                <label for="filter_relax">Для отдыха</label>
+                <input type="checkbox" name="relax" id="filter_relax" onchange="sortGoods()">
+                <label for="filter_sport">Для спорта</label>
+                <input type="checkbox" name="sport" id="filter_sport" onchange="sortGoods()">
+
+
+            </div>
+            <div class="container_products"></div>
+        </div>
+    </section>
+    
+
+</main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <img src="./img/logo.png" alt="Logo" class="footer__logo-pic">
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item">
+                            <h3 class="footer__menu-title">Магазин</h3>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">О магазине</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">Наша команда</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">Вакансии</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item">
+                            <h3 class="footer__menu-title">Контакты</h3>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">+375333959220</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">idsemen1992@ya.ru</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item">
+                            <h3 class="footer__menu-title">Мы в соцсетях</h3>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">Facebook</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">Twitter</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">Instagram</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="footer__menu-link">Youtube</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./script/catalog.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/filter.js"></script>
+ 
+
+</body>
+
+</html>
