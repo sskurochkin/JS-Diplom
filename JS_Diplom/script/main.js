@@ -6,7 +6,7 @@ function showSpam(){
     spam.style.display = 'block';
 };
 
-// setTimeout(showSpam, 2000);
+setTimeout(showSpam, 2000);
 //Всплывающее окно - конец
 
 let closeSpam = document.querySelector('#closeSpam');
